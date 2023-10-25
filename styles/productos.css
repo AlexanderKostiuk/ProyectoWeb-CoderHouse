@@ -1,0 +1,77 @@
+.body-productos {
+    background-color: black;
+}
+
+
+.titulo-productos h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 5rem;
+}
+
+
+.imagenes-perifericos h2 {
+    display: flex;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+
+}
+
+
+.imagenes-perifericos {
+    background-color: transparent;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.teclado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 480px;
+    background-image: url(../assets/Megamenu-Teclados-1500x1182-1.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.auriculares {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 480px;
+    background-image: url(../assets/Megamenu-Audio-1500x1182-1.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.ratones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 480px;
+    background-image: url(../assets/Megamenu-Ratones-1500x1182-1.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.alfombrillas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 480px;
+    background-image: url(../assets/Megamenu-Alfombrillas-1500x1182-1.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}

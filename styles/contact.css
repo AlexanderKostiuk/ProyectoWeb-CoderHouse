@@ -1,0 +1,186 @@
+/*---- HERO ---- */
+.imagen-titulo-soporte {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+
+.imagen-titulo-soporte img {
+    position: relative;
+}
+
+
+.imagen-titulo-soporte h1 {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 2rem;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+
+/* FORM POSITIONING*/
+.form-container {
+    width: 50%;
+    margin: 5rem auto;
+
+}
+
+.FirstLast-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.user-address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.user-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.user-message {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+
+.FirstLast-name>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-address>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-email>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-message>div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*---------- FORM STYLING --------------*/
+.FirstLast-name {
+    color: grey;
+}
+
+.user-address {
+    color: grey;
+}
+
+.user-email {
+    color: grey;
+}
+
+.user-message {
+    color: grey;
+}
+
+.form-container input {
+    background-color: #1c1c1c;
+    color: white;
+    border: none;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.758);
+    padding: .5rem 0 .5rem 0;
+}
+
+.user-message textarea {
+    background-color: #1c1c1c;
+    color: white;
+    border: none;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.758);
+    resize: none;
+    padding: .5rem 0 0 0;
+}
+
+
+.user-message button {
+    margin-top: 1.5rem;
+    width: 190px;
+    padding: .5rem;
+    border: solid 2px white;
+    background-color: transparent;
+    color: white;
+}
+
+.user-message button:hover {
+    background-color: red;
+    transition: all .4s ease-in-out;
+}
+
+/* MEDIA QUERYS */
+@media (max-width: 960px) {
+    .imagen-titulo-soporte h1 {
+        font-size: 3.5rem;
+    }
+ 
+    /* FORMULARIO */
+    .form-container {
+        width: 80%;
+    }
+
+    .FirstLast-name {
+        flex-direction: column;
+    }
+
+    .user-address {
+        flex-direction: column;
+    }
+
+    .user-email {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .imagen-titulo-soporte h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .imagen-titulo-soporte h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .imagen-titulo-soporte h1 {
+        font-size: 1.5rem;
+    }
+    /* FORMULARIO */
+    .form-container {
+        width: 100%;
+    }
+
+    .contenedor-boton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

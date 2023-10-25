@@ -1,0 +1,252 @@
+@import url(./styles/productos.css);
+@import url('./styles/contact.css');
+@import url('./styles/asesor.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('./styles/blog.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.body {
+    background-color: #1c1c1c;
+}
+
+/*----------------------------- MENU NAVBAR--------------------*/
+.navbar {
+    /* background-color: #1c1c1c;
+     */background-color: #1c1c1c;
+   
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 1px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+/* ----------------------- FOOTER ------------------------*/
+
+/*frame-footer-tp (top-down) contiene a ambos footers*/
+.frame-footer-tp {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.frame-footer-top {
+    width: 50%;
+    margin: 0 auto;
+    
+}
+.footer-top {
+    background-color: #000000;
+}
+
+.titulo-footer {
+    background-color: black;
+    color: red;
+}
+
+
+.container-logos {
+    background-color: #000000;
+}
+
+.logos {
+    background-color: black;
+    list-style-type: none;
+}
+
+.iconos {
+    color: white;
+}
+
+.iconos:hover {
+    color:red
+}
+
+.frame-footer-bottom {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer-bottom {
+    background-color: rgb(0, 0, 0);
+    color: red;
+}
+
+
+.terms a {
+    color: red;
+}
+
+/* ---------------- HERO INICIO ------------------------*/
+.hero {
+    background-color:#1c1c1c;
+    position: relative;
+    width: 100%;
+}
+    
+.titulo-info-hero {
+    background-color: transparent;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    text-align: center;
+    flex-wrap: wrap;
+    z-index: auto;
+}
+
+.titulo-info-hero p {
+/*     background-color: #00000051; */
+    color: white;
+    font-size: 1rem;
+}
+
+video {
+    width: 100%;
+    height: auto;
+  }
+
+  /*------------------- Noticias INICIO ----------------------*/
+.seccion-noticias {
+    background-image: url(./assets/noticias.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    color: white;
+  }
+
+
+.noticia-titulo-e-info h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.noticia-titulo-e-info p {
+    width: 50%;
+    height: 50%;
+    font-size: 1.1rem;
+    color: white
+}
+
+.noticia-input-y-boton {
+    width: 50%;
+    padding: 1rem;
+}
+
+/*styling noticias*/
+.noticia-input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: solid 1px red;
+    width: 80%;
+}
+
+.noticia-boton:hover {
+    background-color: red;
+
+    color: white;
+}
+.noticia-boton {
+    width: 30%;
+    border:  solid 2px white;
+    background-color: transparent;
+    color: white;
+}
+
+/*------------------MEDIA QUERYS----------------*/
+@media (max-width: 960px) {
+    .noticias {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .noticia-input-y-boton {
+        text-align: center;
+        align-items: center;
+    }
+
+    .noticia-boton {
+        width: 40%;
+    }
+}
+@media (max-width: 720px) {
+
+    .noticia {
+        width: 100%;
+    }
+    
+    .noticia-titulo-e-info p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 470px) {
+    /* --------------------------------- HERO ------------------------------ */
+    .hero {
+        width: 100%;
+        position: static;
+        text-align: center;
+    }
+
+    .titulo-info-hero {
+        position: static;
+        transform: translateY(0) translateX(0);
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulo-info-hero h2 {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .titulo-info-hero p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    /*--------------------------------------FOOTER--------------------*/
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+}
