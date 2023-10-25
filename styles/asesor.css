@@ -72,7 +72,7 @@
 
 @media (max-width: 720px) {
     .asesor-info {
-        align-items: start;
-        text-align: left;
+        align-items: center;
+        text-align: center;
     }
 }
