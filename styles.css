@@ -126,9 +126,9 @@ img {
 }
 
 .titulo-info-hero p {
-/*     background-color: #00000051; */
     color: white;
     font-size: 1rem;
+
 }
 
 video {
@@ -156,7 +156,8 @@ video {
     width: 50%;
     height: 50%;
     font-size: 1.1rem;
-    color: white
+    color: white;
+    
 }
 
 .noticia-input-y-boton {
@@ -175,14 +176,16 @@ video {
 
 .noticia-boton:hover {
     background-color: red;
-
     color: white;
 }
+
 .noticia-boton {
     width: 30%;
-    border:  solid 2px white;
+    border:  solid 2px rgb(255, 255, 255);
     background-color: transparent;
     color: white;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 /*------------------MEDIA QUERYS----------------*/
@@ -211,6 +214,7 @@ video {
     
     .noticia-titulo-e-info p{
         width: 100%;
+        text-align: center;
     }
 }
 
@@ -240,7 +244,8 @@ video {
 
     .titulo-info-hero p {
         width: 100%;
-        text-align: justify;
+        text-align: left;
+        padding: 1rem;
     }
 
     /*--------------------------------------FOOTER--------------------*/

@@ -25,8 +25,7 @@
 /* FORM POSITIONING*/
 .form-container {
     width: 50%;
-    margin: 5rem auto;
-
+    margin: 1rem auto;
 }
 
 .FirstLast-name {
@@ -124,6 +123,7 @@
     border: solid 2px white;
     background-color: transparent;
     color: white;
+    font-weight: 700;
 }
 
 .user-message button:hover {
@@ -131,7 +131,27 @@
     transition: all .4s ease-in-out;
 }
 
-/* MEDIA QUERYS */
+.ayuda-soporte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 5rem;
+}
+
+.ayuda-soporte h2 {
+    font-weight: 700;
+}
+
+.ayuda-soporte p {
+    color: grey;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+/*---------------- MEDIA QUERYS ----------------------*/
 @media (max-width: 960px) {
     .imagen-titulo-soporte h1 {
         font-size: 3.5rem;
