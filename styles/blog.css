@@ -1,6 +1,12 @@
+.body-blog {
+    background-color: black;
+}
+
+
+
 .contenedor-imagen-titulo-blog {
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .contenedor-titulo-blog {
@@ -17,7 +23,6 @@
     font-weight: bold;
     color:white;
     border-bottom: 1px solid white;
-
 }
 
 .contenedor-tarjetas {
@@ -68,6 +73,6 @@
 @media (max-width: 720px) {
     .contenedor-tarjetas{
         grid-template-columns: 1fr;
-        width: 90%;
+        width: 93%;
     }
 }

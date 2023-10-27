@@ -1,4 +1,4 @@
-@import url(./styles/productos.css);
+@import url('./styles/productos.css');
 @import url('./styles/blog.css');
 @import url('./styles/contact.css');
 @import url('./styles/asesor.css');
@@ -10,6 +10,11 @@
     box-sizing: border-box;
     outline: none;
     font-family: 'Montserrat', sans-serif;
+}
+
+*::selection {
+    background-color: red;
+    color:  white;
 }
 
 img {
