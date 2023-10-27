@@ -1,0 +1,64 @@
+.body-productos {
+    background-color: black;
+}
+
+.titulo-productos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(28, 28, 28) 56%);
+    padding: 3rem 1rem 2rem 1rem;
+
+    h1 {
+        color: white;
+        font-weight: 700;
+        padding-bottom: 0.2rem;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+}
+
+
+.container-productos {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    
+    @include desktop{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include tablet {
+        grid-template-columns: 1fr;
+    }
+
+    .imagen {
+        position: relative;
+        padding: 0.1rem;
+        @include tablet {
+            padding: 0.1rem;
+        }
+    }
+    
+    .imagen:hover {
+        transform: scale(0.9);
+        opacity: 0.5;
+        transition: all ease-out 0.4s;
+    }
+    
+    h2 {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+}

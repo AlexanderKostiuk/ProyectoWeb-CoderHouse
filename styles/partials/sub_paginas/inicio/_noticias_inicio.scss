@@ -1,0 +1,77 @@
+/*--------------NOTICIAS INICIO--------------- */
+.seccion-noticias {
+    background-image: url(./assets/noticias.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    color: $WhiteColor;
+    
+    .noticias {
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+}
+
+.noticia-titulo-e-info h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.noticia-titulo-e-info p {
+    width: 50%;
+    height: 50%;
+    font-size: 1.1rem;
+    color: $WhiteColor;
+    
+    @include tablet {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
+.noticia-input-y-boton {
+    width: 50%;
+    padding: 1rem;
+    
+    @include desktop {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/*styling noticias*/
+.noticia-input {
+    background-color: transparent;
+    color: $WhiteColor;
+    border: none;
+    border-bottom: solid 1px $RedColor;
+    width: 80%;
+}
+
+.noticia-boton:hover {
+    background-color: $RedColor;
+    color: white;
+}
+
+.noticia-boton {
+    width: 30%;
+    border:  solid 2px rgb(255, 255, 255);
+    background-color: transparent;
+    color: $WhiteColor;
+    text-transform: uppercase;
+    font-weight: 700;
+    @include desktop {
+        width: 40%;
+    }
+    
+}

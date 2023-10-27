@@ -1,0 +1,24 @@
+/*----------------------------- MENU NAVBAR--------------------*/
+.navbar {
+    background-color: $GreyColor;
+
+    .nav-link {
+        position: relative;
+    }
+
+    &::after {
+        content: '';
+        opacity: 0;
+        transition: all 0.2s;
+        height: 1px;
+        width: 100%;
+        background-color: $RedColor;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &.nav-link:hover::after {
+        opacity: 1;
+    }
+}

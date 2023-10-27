@@ -1,0 +1,57 @@
+/* ---------------- HERO INICIO ------------------------*/
+.hero {
+    background-color: $GreyColor;
+    position: relative;
+    width: 100%;
+    @include mobile {
+        width: 100%;
+        position: static;
+        text-align: center;
+    }
+    
+    .titulo-info-hero {
+        background-color: transparent;
+        color: $WhiteColor;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        position: absolute;
+        text-align: center;
+        flex-wrap: wrap;
+        z-index: auto;
+
+        @include mobile {
+            position: static;
+            transform: translateY(0) translateX(0);
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        p {
+            color: $WhiteColor;
+            font-size: 1rem;
+
+            @include mobile {
+                width: 100%;
+                text-align: left;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+video {
+    width: 100%;
+    height: auto;
+  }
+
+.titulo-info-hero h2 {
+    @include mobile {
+    width: 100%;
+    font-size: 1rem;
+}
+}

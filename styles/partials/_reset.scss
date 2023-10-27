@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: $mainfont;
+
+    &::selection{
+        background-color: $RedColor;
+        color:  $WhiteColor;
+    }
+}
