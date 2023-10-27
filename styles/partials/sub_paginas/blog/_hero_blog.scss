@@ -1,0 +1,69 @@
+$boton-tarjetas: rgb(139, 139, 139);
+
+.body-blog {
+    background-color: $BlackColor;
+}
+
+.contenedor-imagen-titulo-blog {
+    position: relative;
+    margin-bottom: 2rem;
+
+    .contenedor-titulo-blog {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            color: $WhiteColor;
+            border-bottom: 1px solid $WhiteColor;
+        }
+    }
+}
+
+.contenedor-tarjetas {
+    width: 80%;
+    margin: 0 auto;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 1rem;
+
+    @include desktop-l {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include tablet {
+        grid-template-columns: 1fr;
+        width: 93%;
+    }
+
+    .tarjetas {
+        background-color: white;
+        border-radius: 20px;
+
+        .contenido-tarjetas {
+            margin: .3rem;
+
+            button {
+                background-color: $GreyColor;
+                color: $WhiteColor;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: monospace;
+                padding: .5rem;
+                margin-bottom: 1rem;
+                border: none;
+            }
+            
+            & button:hover {
+                background-color: $boton-tarjetas;
+                transition: 0.2s;
+            }
+        }
+    }
+}
