@@ -308,6 +308,182 @@ video {
   transition: 0.2s;
 }
 
+/*---- HERO ---- */
+.imagen-titulo-soporte {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.imagen-titulo-soporte img {
+  position: relative;
+}
+.imagen-titulo-soporte h1 {
+  position: absolute;
+  margin-top: 0;
+  margin-left: 2rem;
+  color: white;
+  font-size: 4.5rem;
+  font-weight: bold;
+  z-index: 2;
+}
+@media screen and (max-width: 960px) {
+  .imagen-titulo-soporte h1 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .imagen-titulo-soporte h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .imagen-titulo-soporte h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .imagen-titulo-soporte h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.ayuda-soporte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 5rem;
+}
+.ayuda-soporte h2 {
+  font-weight: 700;
+}
+.ayuda-soporte p {
+  color: grey;
+  text-align: center;
+  padding: 2rem;
+}
+
+.form-container {
+  width: 50%;
+  margin: 1rem auto;
+}
+@media screen and (max-width: 960px) {
+  .form-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .form-container {
+    width: 100%;
+  }
+}
+.form-container .FirstLast-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 960px) {
+  .form-container .FirstLast-name {
+    flex-direction: column;
+  }
+}
+.form-container .user-address {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 960px) {
+  .form-container .user-address {
+    flex-direction: column;
+  }
+}
+.form-container .user-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 960px) {
+  .form-container .user-email {
+    flex-direction: column;
+  }
+}
+.form-container .user-message {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+.form-container .FirstLast-name {
+  color: grey;
+}
+.form-container .FirstLast-name div {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .user-address {
+  color: grey;
+}
+.form-container .user-address div {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .user-email {
+  color: grey;
+}
+.form-container .user-email div {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .user-message {
+  color: grey;
+}
+.form-container .user-message div {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 470px) {
+  .form-container .user-message .contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.form-container input {
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.758);
+  padding: 0.5rem 0 0.5rem 0;
+}
+.form-container textarea {
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.758);
+  resize: none;
+  padding: 0.5rem 0 0 0;
+}
+.form-container button {
+  margin-top: 1.5rem;
+  width: 190px;
+  padding: 0.5rem;
+  border: solid 2px white;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+}
+.form-container button:hover {
+  background-color: red;
+  transition: all 0.4s ease-in-out;
+}
+
 .frame-footer-td {
   width: 100%;
   height: auto;

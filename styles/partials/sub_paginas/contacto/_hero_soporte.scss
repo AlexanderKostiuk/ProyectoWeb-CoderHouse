@@ -1,0 +1,189 @@
+/*---- HERO ---- */
+.imagen-titulo-soporte {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+
+    img {
+        position: relative;
+    }
+
+    h1 {
+        position: absolute;
+        margin-top: 0;
+        margin-left: 2rem;
+        color: $WhiteColor;
+        font-size: 4.5rem;
+        font-weight: bold;
+        z-index: 2;
+
+        @include desktop {
+            font-size: 3.5rem;
+        }
+
+        @include tablet {
+            font-size: 2.5rem;
+        }
+
+        @include tablet-s {
+            font-size: 2rem;
+        }
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
+
+    }
+}
+
+.ayuda-soporte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 5rem;
+
+    h2 {
+        font-weight: 700;
+    }
+
+    p {
+        color: $LightGrey;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+.form-container {
+    width: 50%;
+    margin: 1rem auto;
+
+    @include desktop {
+        width: 80%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+
+    .FirstLast-name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 1.5rem;
+
+        @include desktop {
+            flex-direction: column
+        }
+    }
+
+    .user-address {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 1.5rem;
+
+        @include desktop {
+            flex-direction: column
+        }
+    }
+
+    .user-email {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 1.5rem;
+
+        @include desktop {
+            flex-direction: column
+        }
+    }
+
+    .user-message {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .FirstLast-name {
+        color: $LightGrey;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .user-address {
+        color: $LightGrey;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+    .user-email {
+        color: $LightGrey;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .user-message {
+        color: $LightGrey;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contenedor-boton {
+            @include mobile {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    input {
+        background-color: #1c1c1c;
+        color: white;
+        border: none;
+        border-bottom: solid 2px rgba(255, 255, 255, 0.758);
+        padding: .5rem 0 .5rem 0;
+    }
+
+    textarea {
+        background-color: #1c1c1c;
+        color: white;
+        border: none;
+        border-bottom: solid 2px rgba(255, 255, 255, 0.758);
+        resize: none;
+        padding: .5rem 0 0 0;
+    }
+
+    button {
+        margin-top: 1.5rem;
+        width: 190px;
+        padding: .5rem;
+        border: solid 2px white;
+        background-color: transparent;
+        color: white;
+        font-weight: 700;
+    }
+
+    & button:hover {
+        background-color: red;
+        transition: all .4s ease-in-out;
+    }
+}
